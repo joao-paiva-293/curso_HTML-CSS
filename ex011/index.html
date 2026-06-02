@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site me váriois dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/imagemP.png" type="image/PNG">
+        <source media="(max-width: 1000px )" srcset="imagens/imagemM.png" type="image/PNG"> <!--As tags <source> são para adaptar a imagem principal em tamanhos diferentes. A menor imagem ficará sempre acima da maior como neste exemplo.-->
+        <img src="imagens/imagemG.png" alt="Imagem flexível"> <!--A imagem base fica sempre dentro da tag <img>-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls> <!--Parâmentros dentro de áudio existerm vários, como: preload (que existem mais parâmetros dentro dele) que server para carregar o arquivo, controls para aparecer os controles de reprodução do áudio, autoplay que já começa a tocar assim que o site é aberto. E outros que ainda devo aprender.-->
+        <source src="midia/givingup.mp3" type="audio/mpeg">
+        <source src="midia/givingup.ogg" type="audio/ogg">
+        <source src="midia/givingup.wav" type="audio/wav">
+    </audio> <!--Verificar se o navegador irá aceitar o formato de áudio inserido, pois nem todo navegador irá ter compatibilidade. Existem os formatos mp3, wav e ogg.-->
+</body>
+</html>
