@@ -1,2 +1,2 @@
 # Repositorio Modulo 1 - Curso em video
-Exercicios do primeiro módulo do curso de HTML e CSS.
+Exercicios e desafios do meu curso de HTML e CSS do Curso em Vídeo, lecionado por Gustavo Guanabara.
