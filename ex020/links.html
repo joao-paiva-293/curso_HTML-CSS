@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*
+        Pseudo classes são palavras que definem estados de elemtnos dentro do HTML.
+        
+        # = id
+        . = class
+        : = pseudo class
+        :: = pseudo element
+        > = children
+        */
+
+        a{
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited{
+            color: rgb(8, 70, 8)
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+        
+        .especial::before{
+            content: '>>>';
+            font-weight: normal;
+        }
+
+        .especial::after{
+            content: '<<<';
+            font-weight: normal;
+        }
+
+        .especial{
+            background-color: rgb(212, 92, 92);
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Personalizando Links</h1>
+    <ul>
+        <li class="especial"><a href="https://github.com/joao-paiva-293" target="_blank">Repositório GitHub</a></li>
+        <li class="especial"><a href="https://www.youtube.com/@JoaoKs12345" target="_blank">Canal YouTube</a></li>
+        <li><a href="https://www.twitch.tv/jaoks233" target="_blank">Canal Twitch</a></li>
+    </ul>
+</body>
+</html>
